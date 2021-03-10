@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210310 13:29:59.000" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
+<suite source="/Users/shiprashekhar/charly/Tests/Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="TC1: Verify user can Login">
+<kw name="Navigate to Login page" library="main">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://accounts.cloud.charly.education/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210310 13:30:00.771" level="INFO">Opening browser 'chrome' to base url 'https://accounts.cloud.charly.education/'.</msg>
+<status status="PASS" endtime="20210310 13:30:10.983" starttime="20210310 13:30:00.771"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20210310 13:30:11.186" starttime="20210310 13:30:10.984"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:11.187" level="INFO">Clicking element '//a[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']'.</msg>
+<status status="PASS" endtime="20210310 13:30:11.290" starttime="20210310 13:30:11.187"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210310 13:30:13.292" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210310 13:30:13.293" starttime="20210310 13:30:11.291"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[contains(text(),'Login here!')]</arg>
+</arguments>
+<msg timestamp="20210310 13:30:13.293" level="INFO">Clicking element '//a[contains(text(),'Login here!')]'.</msg>
+<status status="PASS" endtime="20210310 13:30:17.739" starttime="20210310 13:30:13.293"></status>
+</kw>
+<status status="PASS" endtime="20210310 13:30:17.740" starttime="20210310 13:30:00.770"></status>
+</kw>
+<kw name="Sign in charly account" library="main">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//button[contains(text(),'Login')]</arg>
+</arguments>
+<status status="PASS" endtime="20210310 13:30:17.796" starttime="20210310 13:30:17.740"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20210310 13:30:17.796" level="INFO">Typing text 'shiprakshekhar@gmail.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" endtime="20210310 13:30:17.998" starttime="20210310 13:30:17.796"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='password']</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20210310 13:30:17.999" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<status status="PASS" endtime="20210310 13:30:18.087" starttime="20210310 13:30:17.999"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[contains(text(),'Login')]</arg>
+</arguments>
+<msg timestamp="20210310 13:30:18.088" level="INFO">Clicking element '//button[contains(text(),'Login')]'.</msg>
+<status status="PASS" endtime="20210310 13:30:19.150" starttime="20210310 13:30:18.087"></status>
+</kw>
+<status status="PASS" endtime="20210310 13:30:19.150" starttime="20210310 13:30:17.740"></status>
+</kw>
+<kw name="Change study level to PHD" library="main">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//div[@id='layout_sidenav_profile']</arg>
+</arguments>
+<status status="PASS" endtime="20210310 13:30:19.797" starttime="20210310 13:30:19.151"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id='layout_sidenav_profile']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:19.798" level="INFO">Clicking element '//div[@id='layout_sidenav_profile']'.</msg>
+<status status="PASS" endtime="20210310 13:30:20.117" starttime="20210310 13:30:19.797"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id='sidebar_menu_profile']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:20.117" level="INFO">Clicking element '//div[@id='sidebar_menu_profile']'.</msg>
+<status status="PASS" endtime="20210310 13:30:20.356" starttime="20210310 13:30:20.117"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[3]</arg>
+</arguments>
+<msg timestamp="20210310 13:30:20.357" level="INFO">Clicking element '//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[3]'.</msg>
+<status status="PASS" endtime="20210310 13:30:20.524" starttime="20210310 13:30:20.357"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210310 13:30:22.527" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210310 13:30:22.527" starttime="20210310 13:30:20.525"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:levelId</arg>
+<arg>PHD</arg>
+</arguments>
+<msg timestamp="20210310 13:30:22.528" level="INFO">Selecting options from selection list 'name:levelId' by label PHD.</msg>
+<status status="PASS" endtime="20210310 13:30:22.621" starttime="20210310 13:30:22.528"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[2]/button[1]</arg>
+</arguments>
+<msg timestamp="20210310 13:30:22.622" level="INFO">Clicking element '//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[2]/button[1]'.</msg>
+<status status="PASS" endtime="20210310 13:30:22.804" starttime="20210310 13:30:22.621"></status>
+</kw>
+<status status="PASS" endtime="20210310 13:30:22.805" starttime="20210310 13:30:19.150"></status>
+</kw>
+<kw name="Change back to Master" library="main">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210310 13:30:24.806" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210310 13:30:24.807" starttime="20210310 13:30:22.806"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//div[@id='layout_sidenav_profile']</arg>
+</arguments>
+<status status="PASS" endtime="20210310 13:30:24.816" starttime="20210310 13:30:24.807"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id='layout_sidenav_profile']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:24.817" level="INFO">Clicking element '//div[@id='layout_sidenav_profile']'.</msg>
+<status status="PASS" endtime="20210310 13:30:24.872" starttime="20210310 13:30:24.816"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id='sidebar_menu_profile']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:24.874" level="INFO">Clicking element '//div[@id='sidebar_menu_profile']'.</msg>
+<status status="PASS" endtime="20210310 13:30:24.960" starttime="20210310 13:30:24.873"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[3]</arg>
+</arguments>
+<msg timestamp="20210310 13:30:24.961" level="INFO">Clicking element '//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[3]'.</msg>
+<status status="PASS" endtime="20210310 13:30:25.061" starttime="20210310 13:30:24.961"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210310 13:30:27.062" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210310 13:30:27.062" starttime="20210310 13:30:25.061"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:levelId</arg>
+<arg>Master</arg>
+</arguments>
+<msg timestamp="20210310 13:30:27.063" level="INFO">Selecting options from selection list 'name:levelId' by label Master.</msg>
+<status status="PASS" endtime="20210310 13:30:27.140" starttime="20210310 13:30:27.062"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[2]/button[1]</arg>
+</arguments>
+<msg timestamp="20210310 13:30:27.141" level="INFO">Clicking element '//body/div[@id='root']/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[2]/button[1]'.</msg>
+<status status="PASS" endtime="20210310 13:30:27.282" starttime="20210310 13:30:27.141"></status>
+</kw>
+<status status="PASS" endtime="20210310 13:30:27.282" starttime="20210310 13:30:22.805"></status>
+</kw>
+<kw name="Logout of Charly account" library="main">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210310 13:30:32.284" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210310 13:30:32.284" starttime="20210310 13:30:27.283"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//div[@id='layout_sidenav_profile']</arg>
+</arguments>
+<status status="PASS" endtime="20210310 13:30:32.294" starttime="20210310 13:30:32.284"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id='layout_sidenav_profile']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:32.294" level="INFO">Clicking element '//div[@id='layout_sidenav_profile']'.</msg>
+<status status="PASS" endtime="20210310 13:30:32.374" starttime="20210310 13:30:32.294"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id='sidebar_menu_logout']</arg>
+</arguments>
+<msg timestamp="20210310 13:30:32.375" level="INFO">Clicking element '//div[@id='sidebar_menu_logout']'.</msg>
+<status status="PASS" endtime="20210310 13:30:42.807" starttime="20210310 13:30:32.374"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//p[@id='logout_title']</arg>
+</arguments>
+<status status="PASS" endtime="20210310 13:30:42.867" starttime="20210310 13:30:42.807"></status>
+</kw>
+<status status="PASS" endtime="20210310 13:30:42.868" starttime="20210310 13:30:27.283"></status>
+</kw>
+<status status="PASS" endtime="20210310 13:30:42.868" critical="yes" starttime="20210310 13:30:00.770"></status>
+</test>
+<doc>Health Testcases</doc>
+<status status="PASS" endtime="20210310 13:30:42.887" starttime="20210310 13:29:59.027"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
