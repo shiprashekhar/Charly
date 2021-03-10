@@ -4,9 +4,9 @@ Steps to run robot framework on terminal:
 
 <b>Installations required:</b>
 
-sudo apt install python3-pip
-pip install robotframework
-pip install robotframework-selenium2library
+sudo apt install python3-pip </br>
+pip install robotframework </br>
+pip install robotframework-selenium2library </br>
 
 Install chrome driver if required 	
 
